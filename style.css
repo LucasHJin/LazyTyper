@@ -1,3 +1,10 @@
+/*
+#786f35
+#9b9450
+#f1dfb7
+#e2c089
+#977658 ​*/
+
 html {
 	box-sizing: border-box;
 }
@@ -7,11 +14,46 @@ html {
 *:before {
 	box-sizing: inherit;
 }
-
 body {
-	background-color: #4144b1;
+	width: 500px;
+	margin: 20px;
+	line-height: 1.6;
+	background-color: #f1dfb7;
 	color: #ffffff;
 	font-family: 'Montserrat', sans-serif;
+}
+title{
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	text-align: center;
+	color: #977658;
+	font-family: 'Montserrat', sans-serif;
+}
+textarea {
+	width: 100%;
+	height: 150px;
+	margin: 10px 0;
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+button {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	background-color: #977658;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+button:hover {
+	background-color: #6b523b;
 }
 
 @keyframes blink-caret {
