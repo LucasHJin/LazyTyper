@@ -21,15 +21,15 @@ document.getElementById("generateText").addEventListener("click", () => {
 async function generateAndInsertTextTypewriter(prompt, documentId, token) {
   const url = `https://docs.googleapis.com/v1/documents/${documentId}:batchUpdate`;
 
-  // Process the text in chunks of 6 characters
+  
   for (let i = 0; i < prompt.length; i += 6) {
-    const chunk = prompt.slice(i, i + 6); // Get a chunk of 6 characters
+    const chunk = prompt.slice(i, i + 6); 
 
     const body = {
       requests: [
         {
           insertText: {
-            location: { index: 1 + i }, // Adjust the index dynamically
+            location: { index: 1 + i }, 
             text: chunk,
           },
         },
@@ -57,8 +57,8 @@ async function generateAndInsertTextTypewriter(prompt, documentId, token) {
       break;
     }
 
-    // Add a delay to simulate typing
-    await new Promise((resolve) => setTimeout(resolve, 300)); // Adjust delay as needed (e.g., 300 ms)
+    
+    await new Promise((resolve) => setTimeout(resolve, 300));
   }
 
   console.log("Typewriter effect completed!");
